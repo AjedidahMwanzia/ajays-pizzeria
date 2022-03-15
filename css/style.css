@@ -8,6 +8,7 @@
     background-image: url(/assets/backgroundpizza.jpeg);
     background-size: cover;
     background-repeat: no-repeat;
+    background-attachment: fixed;
   }
   #nav h1{
     font-family: 'Tangerine', serif;
@@ -35,4 +36,21 @@
   .title h2{
     font-family: 'Tangerine', serif;
     font-size: 5vw;
+    padding-bottom: 1vw;
   }
+  .title p{
+    font-size: 2vw;
+    padding-bottom: 3vw;
+  }
+  .title button{
+    width: 10%;
+    height: 3vw;
+    font-size: 2vw;
+    background-color:rgb(244,155,56) ;
+    border-radius: 0.5vw;
+    border: none;
+    color: white;
+    margin-bottom: 14vw;
+    padding-bottom: 0.3vw;
+  }
+  /* ...............................................about-us................................................................ */
