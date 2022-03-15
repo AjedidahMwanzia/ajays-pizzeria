@@ -1,0 +1,38 @@
+* {
+    box-sizing: border-box;
+    padding: 0%;
+    margin: 0%;
+  }
+  /* ....................................................... header section................................................... */
+  .header{
+    background-image: url(/assets/backgroundpizza.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  #nav h1{
+    font-family: 'Tangerine', serif;
+    color: rgb(244,155,56);
+    padding-top: 1vw;
+    padding-left: 2vw;
+    padding-right: 25vw;
+
+  }
+  #nav a{
+    text-decoration: none;
+    color: white;
+    padding-top: 1.4vw;
+    padding-left: 1.5vw;
+    font-size: 1.3vw;
+  }
+  #nav{
+    display: flex;
+  }
+  .title{
+    text-align: center;
+    color: white;
+    padding-top: 25vw;
+  }
+  .title h2{
+    font-family: 'Tangerine', serif;
+    font-size: 5vw;
+  }
