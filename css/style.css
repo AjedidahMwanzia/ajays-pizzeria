@@ -97,12 +97,12 @@
   font-size: 2vw;
   margin-bottom: 2%;
   font-weight: bold;
-  font-family: 'Tangerine', serif;
+  font-family: 'lobster', serif;
 }
 
 #aboutus .story .description span div {
-  width: 0.5vw;
-  height: 0.5vw;
+  width: 0.8vw;
+  height: 0.8vw;
   border-radius: 50%;
   background-color: #252B42;
   margin-right: 2%;
@@ -126,11 +126,39 @@
   text-align:center;
   width: 25%;
   margin: 2% ;
-  padding: 5% 2%;
+  padding: 2%;
+  color: #252B42;
 
 }
 .card img{
   width: 18vw;
   height: 15vw;
 } 
+.card button{
+  width: 30%;
+  background-color:rgb(244,155,56) ;
+  border: none;
+  padding: 0.5vw;
+  color: white;
+  font-size: 1.2vw;
+  
+}
+.card h4{
+  font-size: 1.5vw;
+  padding-bottom: 0.5vw;
+}
+.card p{
+  font-size: 1.2vw;
+  padding-bottom: 0.5vw;
+}
+.menu h2{
+  color: #252B42;
+  text-align: center;
+  text-decoration: wavy;
+  font-family:'lobster' ;
+}
+.menu h2 span{
+  color: rgb(244,155,56) ;
+}
+
 
