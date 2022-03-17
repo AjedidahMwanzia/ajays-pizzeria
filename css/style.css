@@ -125,15 +125,12 @@
 .card{
   text-align:center;
   width: 25%;
-  box-shadow: 0 5px 12px rgba(0, 0, 0, 0.2);
   margin: 2% ;
   padding: 5% 2%;
-  border-radius: 2vw;
+
 }
 .card img{
-  width: 20vw;
-  height: auto;
-  margin-top: 2px;
- 
+  width: 18vw;
+  height: 15vw;
 } 
 
