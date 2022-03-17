@@ -8,6 +8,7 @@
     background-image: url(/assets/backgroundpizza.jpeg);
     background-size: cover;
     background-repeat: no-repeat;
+    background-attachment: fixed;
   }
   #nav h1{
     font-family: 'Tangerine', serif;
@@ -53,7 +54,7 @@
     border-radius: 0.5vw;
     border: none;
     color: white;
-    margin-bottom: 14vw;
+    margin-bottom: 10vw;
     padding-bottom: 0.3vw;
     font-weight: bold;
     margin-left: 10vw;
@@ -88,25 +89,27 @@
   align-items: flex-start;
   padding: 10% 0;
 }
-styles title
+
 #aboutus .story .description span {
   display: flex;
   align-items: center;
-  color: #009ff6;
-  font-size: 1.2vw;
+  color: #252B42;
+  font-size: 2vw;
   margin-bottom: 2%;
+  font-weight: bold;
+  font-family: 'Tangerine', serif;
 }
-adds the dot at title
+
 #aboutus .story .description span div {
   width: 0.5vw;
   height: 0.5vw;
   border-radius: 50%;
-  background-color: #fff;
+  background-color: #252B42;
   margin-right: 2%;
 }
 #aboutus .story .description p {
-  color: #;
-  font-size: 0.9vw;
+  color: #252B42;
+  font-size: 1.1vw;
   line-height: 1.8vw;
 }
 
