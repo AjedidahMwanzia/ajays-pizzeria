@@ -8,7 +8,6 @@
     background-image: url(/assets/backgroundpizza.jpeg);
     background-size: cover;
     background-repeat: no-repeat;
-    background-attachment: fixed;
   }
   #nav h1{
     font-family: 'Tangerine', serif;
@@ -27,30 +26,88 @@
   }
   #nav{
     display: flex;
+    background-color: rgb(0,0,0,0.6);
+    padding-bottom: 1vw;
   }
   .title{
-    text-align: center;
     color: white;
     padding-top: 25vw;
+    padding-left: 5vw;
   }
   .title h2{
     font-family: 'Tangerine', serif;
     font-size: 5vw;
     padding-bottom: 1vw;
+    padding-left: 3vw;
   }
   .title p{
     font-size: 2vw;
     padding-bottom: 3vw;
+    font-weight: bold;
   }
   .title button{
     width: 10%;
     height: 3vw;
-    font-size: 2vw;
+    font-size: 1vw;
     background-color:rgb(244,155,56) ;
     border-radius: 0.5vw;
     border: none;
     color: white;
     margin-bottom: 14vw;
     padding-bottom: 0.3vw;
+    font-weight: bold;
+    margin-left: 10vw;
   }
   /* ...............................................about-us................................................................ */
+
+#aboutus .story .description {
+  width: 55%;
+  padding-left: 10%;
+}
+#aboutus .story .img img {
+  width: 100%;
+  transition: 0.3s;
+  position: relative;
+  transform: rotate(-10deg);
+  border: 0.1vw solid #494949;
+}
+#aboutus .story .img {
+  position: relative;
+  width: 45%;
+  border: 0.1vw solid #494949;
+  transform: rotate(10deg);
+  backdrop-filter: blur(0.1vw);
+}
+#aboutus{
+  padding: 0 10%;
+}
+
+#aboutus .story {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 10% 0;
+}
+styles title
+#aboutus .story .description span {
+  display: flex;
+  align-items: center;
+  color: #009ff6;
+  font-size: 1.2vw;
+  margin-bottom: 2%;
+}
+adds the dot at title
+#aboutus .story .description span div {
+  width: 0.5vw;
+  height: 0.5vw;
+  border-radius: 50%;
+  background-color: #fff;
+  margin-right: 2%;
+}
+#aboutus .story .description p {
+  color: #;
+  font-size: 0.9vw;
+  line-height: 1.8vw;
+}
+
+
