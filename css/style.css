@@ -181,16 +181,18 @@ hr{
 }
 /* ...........................................................footer...................................................................... */
 .footer{
-display: flex;
-justify-content: space-around;
-margin-top: 2vw;
-margin-bottom: 1vw;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 2vw;
+  margin-bottom: 1vw;
 }
 .hours li{
   list-style: none;
   color: #252B42 ;
+  padding-bottom: 0.1vw;
+ 
 }
-.hours li span{
+.time{
   color:rgb(244,155,56)  ;
 }
 .footer h4{
@@ -202,14 +204,55 @@ margin-bottom: 1vw;
 }
 .contact p{
   text-align: center;
+  color:#252B42  ;
+  padding-bottom: 0.3vw;
 }
 .location{
   padding-top: 2vw;
   text-align: center;
+
 }
 .copy{
   text-align: center;
+  color:#252B42  ;
 }
-
+.location p{
+  padding-bottom: 0.3vw;
+}
+.days{
+  display: flex;
+ 
+}
+.time li{
+  padding-left: 1vw;
+  color:rgb(244,155,56) ;
+}
+.subscribe{
+  display: flex;
+  flex-direction: column;
+}
+.icons a{
+  padding-left: 1vw;
+}
+.icons{
+  margin-bottom: 2vw;
+  margin-left: 9vw;
+}
+.form{
+  margin-left: 8vw;
+}
+input{
+  width: 70%;
+  height: 2vw;
+  padding-left: 1vw;
+}
+.form button{
+  width: 25%;
+  height: 2vw;
+  background-color: rgb(244,155,56) ;
+  border: none;
+  color: white;
+  border-radius: 0.2vw;
+}
 
 
