@@ -154,11 +154,31 @@
 .menu h2{
   color: #252B42;
   text-align: center;
-  text-decoration: wavy;
   font-family:'lobster' ;
 }
 .menu h2 span{
   color: rgb(244,155,56) ;
+}
+
+/* ..........................................................memories..................................................................... */
+.memories h2{
+  text-align: center;
+  font-family:'lobster' ;
+  color: #252B42;
+}
+hr{
+  width: 3%;
+  margin-left:48vw ;
+  margin-top: 0.5vw;
+  height: 0.2vw;
+  background-color:rgb(244,155,56) ;
+}
+.family {
+  width: 100%;
+
+}
+.family img{
+  width: 24.8%;
 }
 
 
