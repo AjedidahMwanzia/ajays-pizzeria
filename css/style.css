@@ -533,6 +533,27 @@ hr{
     width: 24.2%;
   }
 }
+@media  screen and (max-width:360px){
+  .memories h2{
+    text-align: center;
+    font-family:'lobster' ;
+    color: #252B42;
+    font-size: 3vw;
+  }
+  hr{
+    width: 3%;
+    margin-left:48vw ;
+    margin-top: 0.5vw;
+    height: 0.2vw;
+    background-color:rgb(244,155,56) ;
+  }
+  .family {
+    width: 100%;
+  }
+  .family img{
+    width: 24%;
+  }
+}
 
 /* ...........................................................footer...................................................................... */
 .footer{
@@ -634,7 +655,7 @@ input{
     text-align: center;
     font-family:'lobster' ;
     padding-bottom: 1vw;
-    font-size: 1.2vw;
+    font-size: 1.8vw;
   }
   .contact p{
     text-align: center;
@@ -650,7 +671,7 @@ input{
   .copy{
     text-align: center;
     color:#252B42  ;
-    font-size: 1vw;
+    font-size: 1.5vw;
   }
   .location p{
     padding-bottom: 0.3vw;
@@ -671,6 +692,8 @@ input{
     margin-bottom: 2vw;
     margin-left: 9vw;
     display: flex;
+    width: 0.1vw;
+    padding-left: 3vw;
   }
   .icons a{
     width: 0.5%;
@@ -680,7 +703,7 @@ input{
     margin-left: 8vw;
   }
   input{
-    width: 70%;
+    width: 60%;
     height: 3vw;
     padding-left: 1vw;
     font-size: 1vw;
@@ -691,7 +714,93 @@ input{
     background-color: rgb(244,155,56) ;
     border: none;
     color: white;
-    border-radius: 0.2vw;
+    border-radius: 0.3vw;
+    font-size: 1vw;
+  }
+}
+@media  screen and (max-width:350px){
+  .footer{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 2vw;
+    margin-bottom: 1vw;
+    width: 100%;
+  }
+  .hours li{
+    list-style: none;
+    color: #252B42 ;
+    padding-bottom: 0.1vw;
+    font-size: 2vw;
+   
+  }
+  .time{
+    color:rgb(244,155,56)  ;
+  }
+  .footer h4{
+    color:#252B42  ;
+    text-align: center;
+    font-family:'lobster' ;
+    padding-bottom: 1vw;
+    font-size: 1.8vw;
+  }
+  .contact p{
+    text-align: center;
+    color:#252B42  ;
+    padding-bottom: 0.3vw;
+    font-size: 1.5vw;
+  }
+  .location{
+    padding-top: 2vw;
+    text-align: center;
+  
+  }
+  .copy{
+    text-align: center;
+    color:#252B42  ;
+    font-size: 1.5vw;
+  }
+  .location p{
+    padding-bottom: 0.3vw;
+  }
+  .days{
+    display: flex;
+   
+  }
+  .time li{
+    padding-left: 1vw;
+    color:rgb(244,155,56) ;
+  }
+  .subscribe{
+    display: flex;
+    flex-direction: column;
+  }
+  .icons{
+    margin-bottom: 2vw;
+    margin-left: 9vw;
+    display: flex;
+    width: 2vw;
+    padding-left: 1vw;
+  }
+  .icons a{
+    width: 0.5%;
+    padding-right: 3vw;
+  }
+  .form{
+    margin-left: 8vw;
+  }
+  input{
+    width: 60%;
+    height: 3vw;
+    padding-left: 1vw;
+    font-size: 1vw;
+  }
+  .form button{
+    width: 25%;
+    height: 3vw;
+    background-color: rgb(244,155,56) ;
+    border: none;
+    color: white;
+    border-radius: 0.3vw;
     font-size: 1vw;
   }
 }
