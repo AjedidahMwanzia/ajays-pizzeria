@@ -59,6 +59,132 @@
     font-weight: bold;
     margin-left: 10vw;
   }
+  /* ................................................mediaqueries.......................................................... */
+  @media  screen and (max-width:500px){
+    * {
+      box-sizing: border-box;
+      padding: 0%;
+      margin: 0%;
+    }
+    .header{
+      background-image: url(/assets/backgroundpizza.jpeg);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+    }
+    #nav h1{
+      font-family: 'Tangerine', serif;
+      color: rgb(244,155,56);
+      padding-top: 1vw;
+      padding-left: 2vw;
+      padding-right: 25vw;
+      font-size: 4vw;
+  
+    }
+    #nav a{
+      text-decoration: none;
+      color: white;
+      padding-top: 1.4vw;
+      padding-left: 1.5vw;
+      font-size: 2vw;
+    }
+    #nav{
+      display: flex;
+      background-color: rgb(0,0,0,0.6);
+      padding-bottom: 1vw;
+    }
+    .title{
+      color: white;
+      padding-top: 25vw;
+      padding-left: 5vw;
+    }
+    .title h2{
+      font-family: 'Tangerine', serif;
+      font-size: 5vw;
+      padding-bottom: 1vw;
+      padding-left: 3vw;
+    }
+    .title p{
+      font-size: 2vw;
+      padding-bottom: 3vw;
+      font-weight: bold;
+    }
+    .title button{
+      width: 10%;
+      height: 3vw;
+      font-size: 1vw;
+      background-color:rgb(244,155,56) ;
+      border-radius: 0.5vw;
+      border: none;
+      color: white;
+      margin-bottom: 10vw;
+      padding-bottom: 0.3vw;
+      font-weight: bold;
+      margin-left: 10vw;
+    }
+  }
+  @media  screen and (max-width:350px){
+    * {
+      box-sizing: border-box;
+      padding: 0%;
+      margin: 0%;
+    }
+    .header{
+      background-image: url(/assets/backgroundpizza.jpeg);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+    }
+    #nav h1{
+      font-family: 'Tangerine', serif;
+      color: rgb(244,155,56);
+      padding-top: 1vw;
+      padding-left: 2vw;
+      padding-right: 25vw;
+  
+    }
+    #nav a{
+      text-decoration: none;
+      color: white;
+      padding-top: 1.4vw;
+      padding-left: 1.5vw;
+      font-size: 1.3vw;
+    }
+    #nav{
+      display: flex;
+      background-color: rgb(0,0,0,0.6);
+      padding-bottom: 1vw;
+    }
+    .title{
+      color: white;
+      padding-top: 25vw;
+      padding-left: 5vw;
+    }
+    .title h2{
+      font-family: 'Tangerine', serif;
+      font-size: 5vw;
+      padding-bottom: 1vw;
+      padding-left: 3vw;
+    }
+    .title p{
+      font-size: 2vw;
+      padding-bottom: 3vw;
+      font-weight: bold;
+    }
+    .title button{
+      width: 10%;
+      height: 3vw;
+      font-size: 1vw;
+      background-color:rgb(244,155,56) ;
+      border-radius: 0.5vw;
+      border: none;
+      color: white;
+      margin-bottom: 10vw;
+      padding-bottom: 0.3vw;
+      font-weight: bold;
+      margin-left: 10vw;
+    }
+  }
   /* ...............................................about-us................................................................ */
 
 #aboutus .story .description {
@@ -112,6 +238,115 @@
   font-size: 1.1vw;
   line-height: 1.8vw;
 }
+/* ..............................................mediaqueries.......................................................... */
+@media  screen and (max-width:500px){
+
+#aboutus .story .description {
+  width: 55%;
+  padding-left: 10%;
+}
+#aboutus .story .img img {
+  width: 100%;
+  transition: 0.3s;
+  position: relative;
+  transform: rotate(-10deg);
+  border: 0.1vw solid #494949;
+}
+#aboutus .story .img {
+  position: relative;
+  width: 45%;
+  border: 0.1vw solid #494949;
+  transform: rotate(10deg);
+  backdrop-filter: blur(0.1vw);
+}
+#aboutus{
+  padding: 0 10%;
+}
+
+#aboutus .story {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 10% 0;
+}
+
+#aboutus .story .description span {
+  display: flex;
+  align-items: center;
+  color: #252B42;
+  font-size: 2vw;
+  margin-bottom: 2%;
+  font-weight: bold;
+  font-family: 'lobster', serif;
+}
+
+#aboutus .story .description span div {
+  width: 0.8vw;
+  height: 0.8vw;
+  border-radius: 50%;
+  background-color: #252B42;
+  margin-right: 2%;
+}
+#aboutus .story .description p {
+  color: #252B42;
+  font-size: 1.1vw;
+  line-height: 1.8vw;
+}
+}
+@media  screen and (max-width:350px){
+
+  #aboutus .story .description {
+    width: 55%;
+    padding-left: 10%;
+  }
+  #aboutus .story .img img {
+    width: 100%;
+    transition: 0.3s;
+    position: relative;
+    transform: rotate(-10deg);
+    border: 0.1vw solid #494949;
+  }
+  #aboutus .story .img {
+    position: relative;
+    width: 45%;
+    border: 0.1vw solid #494949;
+    transform: rotate(10deg);
+    backdrop-filter: blur(0.1vw);
+  }
+  #aboutus{
+    padding: 0 10%;
+  }
+  
+  #aboutus .story {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 10% 0;
+  }
+  
+  #aboutus .story .description span {
+    display: flex;
+    align-items: center;
+    color: #252B42;
+    font-size: 2vw;
+    margin-bottom: 2%;
+    font-weight: bold;
+    font-family: 'lobster', serif;
+  }
+  
+  #aboutus .story .description span div {
+    width: 0.8vw;
+    height: 0.8vw;
+    border-radius: 50%;
+    background-color: #252B42;
+    margin-right: 2%;
+  }
+  #aboutus .story .description p {
+    color: #252B42;
+    font-size: 1.1vw;
+    line-height: 1.8vw;
+  }
+  }
 /* .............................................our menu.................................................................... */
 .cards {
   width: 100%;
@@ -159,7 +394,104 @@
 .menu h2 span{
   color: rgb(244,155,56) ;
 }
-
+/* ...........................................................mediaqueries................................................. */
+@media  screen and (max-width:500px){
+  .cards {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  
+  }
+  .card{
+    text-align:center;
+    width: 25%;
+    margin: 2% ;
+    padding: 2%;
+    color: #252B42;
+  
+  }
+  .card img{
+    width: 18vw;
+    height: 15vw;
+  } 
+  .card button{
+    width: 30%;
+    background-color:rgb(244,155,56) ;
+    border: none;
+    padding: 0.5vw;
+    color: white;
+    font-size: 1.2vw;
+    
+  }
+  .card h4{
+    font-size: 1.5vw;
+    padding-bottom: 0.5vw;
+  }
+  .card p{
+    font-size: 1.2vw;
+    padding-bottom: 0.5vw;
+  }
+  .menu h2{
+    color: #252B42;
+    text-align: center;
+    font-family:'lobster' ;
+    font-size: 3vw;
+  }
+  .menu h2 span{
+    color: rgb(244,155,56) ;
+  }
+}
+@media  screen and (max-width:350px){
+  .cards {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  
+  }
+  .card{
+    text-align:center;
+    width: 25%;
+    margin: 2% ;
+    padding: 2%;
+    color: #252B42;
+  
+  }
+  .card img{
+    width: 18vw;
+    height: 15vw;
+  } 
+  .card button{
+    width: 30%;
+    background-color:rgb(244,155,56) ;
+    border: none;
+    padding: 0.5vw;
+    color: white;
+    font-size: 1.2vw;
+    
+  }
+  .card h4{
+    font-size: 1.5vw;
+    padding-bottom: 0.5vw;
+  }
+  .card p{
+    font-size: 1.2vw;
+    padding-bottom: 0.5vw;
+  }
+  .menu h2{
+    color: #252B42;
+    text-align: center;
+    font-family:'lobster' ;
+  }
+  .menu h2 span{
+    color: rgb(244,155,56) ;
+  }
+}
 /* ..........................................................memories..................................................................... */
 .memories h2{
   text-align: center;
@@ -179,6 +511,29 @@ hr{
 .family img{
   width: 24.8%;
 }
+/* ...........................................................mediaqueries................................................ */
+@media  screen and (max-width:500px){
+  .memories h2{
+    text-align: center;
+    font-family:'lobster' ;
+    color: #252B42;
+    font-size: 3vw;
+  }
+  hr{
+    width: 3%;
+    margin-left:48vw ;
+    margin-top: 0.5vw;
+    height: 0.2vw;
+    background-color:rgb(244,155,56) ;
+  }
+  .family {
+    width: 100%;
+  }
+  .family img{
+    width: 24.2%;
+  }
+}
+
 /* ...........................................................footer...................................................................... */
 .footer{
   display: flex;
@@ -254,5 +609,89 @@ input{
   color: white;
   border-radius: 0.2vw;
 }
+/* ........................................................mediaqueries............................................. */
 
-
+@media  screen and (max-width:500px){
+  .footer{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 2vw;
+    margin-bottom: 1vw;
+    width: 100%;
+  }
+  .hours li{
+    list-style: none;
+    color: #252B42 ;
+    padding-bottom: 0.1vw;
+    font-size: 2vw;
+   
+  }
+  .time{
+    color:rgb(244,155,56)  ;
+  }
+  .footer h4{
+    color:#252B42  ;
+    text-align: center;
+    font-family:'lobster' ;
+    padding-bottom: 1vw;
+    font-size: 1.2vw;
+  }
+  .contact p{
+    text-align: center;
+    color:#252B42  ;
+    padding-bottom: 0.3vw;
+    font-size: 1.5vw;
+  }
+  .location{
+    padding-top: 2vw;
+    text-align: center;
+  
+  }
+  .copy{
+    text-align: center;
+    color:#252B42  ;
+    font-size: 1vw;
+  }
+  .location p{
+    padding-bottom: 0.3vw;
+  }
+  .days{
+    display: flex;
+   
+  }
+  .time li{
+    padding-left: 1vw;
+    color:rgb(244,155,56) ;
+  }
+  .subscribe{
+    display: flex;
+    flex-direction: column;
+  }
+  .icons{
+    margin-bottom: 2vw;
+    margin-left: 9vw;
+    display: flex;
+  }
+  .icons a{
+    width: 0.5%;
+    padding-right: 3vw;
+  }
+  .form{
+    margin-left: 8vw;
+  }
+  input{
+    width: 70%;
+    height: 3vw;
+    padding-left: 1vw;
+    font-size: 1vw;
+  }
+  .form button{
+    width: 25%;
+    height: 3vw;
+    background-color: rgb(244,155,56) ;
+    border: none;
+    color: white;
+    border-radius: 0.2vw;
+    font-size: 1vw;
+  }
+}
