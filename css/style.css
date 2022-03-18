@@ -492,6 +492,44 @@
     color: rgb(244,155,56) ;
   }
 }
+/* .......................................................... order........................................................ */
+.heading {
+  text-align: center;
+  font-family:'lobster' ;
+  color: #252B42;
+  margin-bottom: 2vw;
+}
+.order{
+  color: #252B42;
+  border: 0.1vw solid black;
+  margin: 3vw;
+  padding-top: 2vw;
+  padding-bottom: 3vw;
+}
+.container{
+  text-align: center;
+}
+.group{
+  margin-left: 15vw;
+  width: 70%;
+  padding: 1vw;
+  text-align: center;
+}
+.group label{
+  padding-bottom: 1vw;
+}
+.order h4{
+  text-align: center;
+  padding-bottom: 1vw;
+}
+select{
+  width:48% ;
+  margin-left: 2vw;
+  padding: 0.5vw;
+  margin-top: 1vw;
+  margin-bottom: 1vw;
+}
+
 /* ..........................................................memories..................................................................... */
 .memories h2{
   text-align: center;
@@ -554,7 +592,27 @@ hr{
     width: 24%;
   }
 }
-
+@media  screen and (max-width:250px){
+  .memories h2{
+    text-align: center;
+    font-family:'lobster' ;
+    color: #252B42;
+    font-size: 3vw;
+  }
+  hr{
+    width: 3%;
+    margin-left:48vw ;
+    margin-top: 0.5vw;
+    height: 0.2vw;
+    background-color:rgb(244,155,56) ;
+  }
+  .family {
+    width: 100%;
+  }
+  .family img{
+    width: 22%;
+  }
+}
 /* ...........................................................footer...................................................................... */
 .footer{
   display: flex;
