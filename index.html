@@ -86,12 +86,12 @@
       </div>
     </div>
     <!-- .......................................................Order.................................................... -->
-
+  
     <div class="order" id="order">
       <div class="heading" id="heading"> 
          <h2>Order Here</h2>
       </div>
-        <form action="">
+        <form action="" id="form1">
             <div class="group">
                     <label for="name">Your Name:</label> <br> <br>
                     <input type="text"  id="name" placeholder="Name..."  required>
@@ -137,54 +137,52 @@
                     <option>5</option>
                 </select>
             </div>
-          <div class="toppings">
+          <div class="toppings1">
                 <div class="small">
-                        <label for="extratoppings">Extra Toppings</label><br>
-                        <p><small id="number">Maximum of 3</small><br></p>
-                        <p> <small ><b>Small:&ensp;</b>Ksh.70&ensp; <b>Medium:&ensp;</b>Ksh.100&ensp; <b>Large:&ensp;</b>Ksh.130&ensp;</small></p>
+                    <label for="extratoppings">Extra Toppings</label><br>
+                    <p><small id="maximum">Maximum of 3</small><br></p>
+                    <p> <small ><b>Small:&ensp;</b>Ksh.70&ensp; <b>Medium:&ensp;</b>Ksh.100&ensp; <b>Large:&ensp;</b>Ksh.130&ensp;</small></p>
                 </div>
                 <div class="parts">
-                        <div class="part1">
+                    <div class="part1">
                             
-                            <input type="checkbox" name="toppings"value="bacon" id="bacon">
-                            <label for="bacon">Bacon</label> <br>  
-                            
-                            <input type="checkbox" name="toppings" id="cheddar-cheese">
-                            <label for="cheddar-cheese">Cheddar Cheese</label> <br>
-                            
-                            <input  type="checkbox" name="toppings" id="ham">
-                            <label  for="ham">Ham</label> <br>
-                            
-                            <input  type="checkbox" name="toppings" id="mozarella-cheese">
-                            <label  for="mozarella-cheese">Mozarella Cheese</label> <br>
+                        <input type="checkbox" name="toppings"value="bacon" id="bacon">
+                        <label for="bacon">Bacon</label> <br>  
                         
-                            <input  type="checkbox" name="toppings"  id="mushrooms">
-                            <label  for="mushrooms">Mushroom</label> <br>
-                                
-                        </div>
+                        <input type="checkbox" name="toppings" id="cheddar-cheese">
+                        <label for="cheddar-cheese">Cheddar Cheese</label> <br>
+                        
+                        <input  type="checkbox" name="toppings" id="ham">
+                        <label  for="ham">Ham</label> <br>
+                        
+                        <input  type="checkbox" name="toppings" id="mozarella-cheese">
+                        <label  for="mozarella-cheese">Mozarella Cheese</label> <br>
                     
-                        <div class="part2">
+                        <input  type="checkbox" name="toppings"  id="mushrooms">
+                        <label  for="mushrooms">Mushroom</label> <br>
                             
-                                <input  type="checkbox" name="toppings"  id="olives">
-                                <label  for="olives">Olives</label> <br>
-                            
-                                <input  type="checkbox" name="toppings"  id="onions">
-                                <label for="onions">Onions</label> <br>
-                        
-                                <input  type="checkbox" name="toppings"id="parmesan-cheese">
-                                <label for="parmesan-cheese">Parmesan Cheese</label> <br>
-                            
-                                <input type="checkbox" name="toppings" id="pepperoni">
-                                <label for="pepperoni">Pepperoni</label> <br>
-                        
-                                <input  type="checkbox" name="toppings"  id="sausage">
-                                <label  for="sausage">Sausage</label> 
-                            </div>
-                        </div> 
-           </div>
-            
+                    </div>
                 
-                <button type="submit" name="submitButton" class="btn submit" id="placeorder">Place Order</button>
+                    <div class="part2">
+                        
+                            <input  type="checkbox" name="toppings"  id="olives">
+                            <label  for="olives">Olives</label> <br>
+                        
+                            <input  type="checkbox" name="toppings"  id="onions">
+                            <label for="onions">Onions</label> <br>
+                    
+                            <input  type="checkbox" name="toppings"id="parmesan-cheese">
+                            <label for="parmesan-cheese">Parmesan Cheese</label> <br>
+                        
+                            <input type="checkbox" name="toppings" id="pepperoni">
+                            <label for="pepperoni">Pepperoni</label> <br>
+                    
+                            <input  type="checkbox" name="toppings"  id="sausage">
+                            <label  for="sausage">Sausage</label> 
+                        </div>
+                    </div> 
+                </div>
+            <input type="submit" name="submitButton" class="btnsubmit"  id="placeorder" value="Place Order">
       </form>
     </div>
     <div id="yourorder">
@@ -241,7 +239,7 @@
         </div>
     </div>
     <div id="delivery">
-        <form id="deliveryDetails">
+        <form id="deliveryDetails" class="form2" >
             <h5>Please fill the following for delivery:</h5>
 
             <div class="street">

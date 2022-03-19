@@ -635,7 +635,7 @@
   font-weight: bold;
 }
 #delivery{
-  display: none;
+  /* display: none; */
   text-align: center;
   padding: 3% ;
   box-shadow: 0 5px 12px rgba(0, 0, 0, 0.2);
@@ -672,6 +672,8 @@
 }
 #pickUpConfirmation{
   margin-bottom: 2vw;
+  /* display: none; */
+  text-align: center;
 }
 #pickUpConfirmation a{
   text-decoration: none;
@@ -686,6 +688,8 @@
 }
 #deliveryConfirmation{
   margin-bottom: 1vw;
+  /* display: none; */
+  text-align: center;
 }
  #deliveryConfirmation a{
   text-decoration: none;
@@ -698,12 +702,6 @@
  #deliveryConfirmation p{
   padding-bottom: 2vw;
  }
-
-
-#pickUpConfirmation, #deliveryConfirmation{
-  display: none;
-  text-align: center;
-}
 div.totalPick, div.name, div.location, div.totalDel, div.phone{
  /*style how the divs display */
   display: inline;
