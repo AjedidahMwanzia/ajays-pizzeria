@@ -5,7 +5,7 @@
   }
   /* ....................................................... header section................................................... */
   .header{
-    background-image: url(/assets/backgroundpizza.jpeg);
+    background-image: url(../assets/backgroundpizza.jpeg);
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -67,7 +67,7 @@
       margin: 0%;
     }
     .header{
-      background-image: url(/assets/backgroundpizza.jpeg);
+      background-image: url(../assets/backgroundpizza.jpeg);
       background-size: cover;
       background-repeat: no-repeat;
       background-attachment: fixed;
@@ -130,7 +130,7 @@
       margin: 0%;
     }
     .header{
-      background-image: url(/assets/backgroundpizza.jpeg);
+      background-image: url(../assets/backgroundpizza.jpeg);
       background-size: cover;
       background-repeat: no-repeat;
       background-attachment: fixed;
@@ -572,7 +572,7 @@
 }
 #yourorder{
   text-align: center;
-  /* display: none; */
+  display: none;
   padding-bottom: 5%;
   color: #252B42;
 }
@@ -635,7 +635,7 @@
   font-weight: bold;
 }
 #delivery{
-  /* display: none; */
+  display: none;
   text-align: center;
   padding: 3% ;
   box-shadow: 0 5px 12px rgba(0, 0, 0, 0.2);
@@ -672,7 +672,7 @@
 }
 #pickUpConfirmation{
   margin-bottom: 2vw;
-  /* display: none; */
+  display: none;
   text-align: center;
 }
 #pickUpConfirmation a{
@@ -688,7 +688,7 @@
 }
 #deliveryConfirmation{
   margin-bottom: 1vw;
-  /* display: none; */
+  display: none;
   text-align: center;
 }
  #deliveryConfirmation a{
