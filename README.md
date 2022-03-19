@@ -4,7 +4,7 @@
 ##### By Ajedidah Mwanzia 
 
 
-<img src="">
+<img src="https://github.com/AjedidahMwanzia/ajays-pizzeria/blob/master/assets/projectpizza.png">
 
 
 ## Table of Content
