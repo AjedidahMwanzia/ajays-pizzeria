@@ -7,26 +7,27 @@
     var flavor = $("#pizza-flavor").val();
     var size = $("#pizza-size").val();
     var crust = $("#pizza-crust").val();
-    var toppings = [];
-    console.log(`${name} ${flavor} ${size} ${crust} ${toppings}`)
-   $.each($('input[name="toppings"]:checked'),
-        function() {
-            toppings.push($(this).val());
-        });
     var number = $("#pizza-number").val();
+    var toppings = [];
+    console.log(`${name} ${flavor} ${size} ${crust} ${number}  `)
+
+     $.each($('input[name="toppings"]:checked'),
+        function() {
+            toppings.push(this.value);
+        });
+      
     var sizeCost; 
     if (flavor === "Hawaian" || flavor === "cheese" || flavor === "peperoni" ) {
         if (size === "Small") {
             sizeCost = 400;
-            return true
+           
         } else if (size === "Medium") {
             sizeCost = 650;
-            return true
         } else if (size === "Large") {
             sizeCost = 900;
             return true
         } 
-    } 
+    }   
      else if (flavor === "Mushroom" ||flavor === "Margharita" || flavor === "vegan" ) {
         if (size === "Small") {
             sizeCost = 450;
@@ -36,7 +37,8 @@
         } else if (size === "Large") {
             sizeCost = 950;
         }
-    } 
+    }
+    console.log(sizeCost) 
     var crustCost; 
     if (crust === "Gluten Free") {
         crustCost = 230;
@@ -49,7 +51,7 @@
     }else{
         return false;
     }
-  alert("hey")
+    console.log(crustCost,  sizeCost)
     var checkboxes = $('input[name="toppings"]:checked').length;
    
     if (checkboxes <= 3) { 
@@ -60,12 +62,12 @@
         } else if (size === "Large") {
             var toppingsCost = checkboxes * 130;
         }
-     
         $("input[type='checkbox']:not(:checked)").prop({ 
             disabled: true
         }); 
         $('#placeorder').prop('disabled', true); 
         $("#yourorder").show();
+        console.log(crustCost,  sizeCost, toppingsCost )
         var price = (sizeCost + crustCost + toppingsCost);
         var totalPrice = parseInt(price * number);
         $(".salutation").text("Hey" + " " + name + ". Here's your order:");
@@ -81,12 +83,14 @@
         }
         if (toppings != "") {
             $(".toppings").append('<tr><td id="pizza-toppings">' + toppings);
+         
         }
         $(".name").text(name);
     } else {
         document.getElementById("maximum").innerHTML = "Please select a maximum of 3!";
         document.getElementById("maximum").style.cssText = 'color:red !important' 
     }
+     
   
 }); 
 function makeDelivery() {
@@ -97,7 +101,7 @@ function makeDelivery() {
     $(".phone").text(phone);
     $("#delivery").hide();
   }
-  
+ 
   $(document).ready(function() {
     $("#orders").submit(function(event) {
         event.preventDefault();
@@ -127,6 +131,7 @@ function makeDelivery() {
     $(".totalPick").text(checkoutTotal);
     var checkoutTotalDel = checkoutTotal + 200; //add Ksh.200 to checkout total when delivery is chosen
     $(".totalDel").text(checkoutTotalDel);
+    
   }
   
   function pickUp() {

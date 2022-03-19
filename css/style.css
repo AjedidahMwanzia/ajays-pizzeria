@@ -46,9 +46,9 @@
     padding-bottom: 3vw;
     font-weight: bold;
   }
-  .title button{
+  .title input{
     width: 10%;
-    height: 3vw;
+    height: 2.5vw;
     font-size: 1vw;
     background-color:rgb(244,155,56) ;
     border-radius: 0.5vw;
@@ -109,7 +109,7 @@
       padding-bottom: 3vw;
       font-weight: bold;
     }
-    .title button{
+    .title a{
       width: 10%;
       height: 3vw;
       font-size: 1vw;
@@ -501,8 +501,6 @@
 }
 .order{
   color: #252B42;
-  /* border: 0.1vw solid #252B42;
-  border-radius: 0.5vw; */
   margin: 3vw;
   padding-top: 2vw;
   padding-bottom: 3vw;
@@ -559,7 +557,7 @@
 .one{
   text-align: center;
 }
-.order button{
+.btnsubmit input {
   width: 10%;
   background-color:rgb(244,155,56) ;
   border: none;
@@ -567,7 +565,7 @@
   color: white;
   font-size: 1.2vw;
   border-radius: 0.5vw;
-  margin-left:43vw ;
+  margin-left:42vw ;
   margin-top: 1vw;
 }
 #yourorder{
@@ -603,14 +601,25 @@
   border-radius: 0.5vw;
   font-weight: bold;
 }
+.table1 {
+  margin-left: 28vw;
+  margin-bottom: 2vw;
+}
 .table1 th{
-  text-align: center;
+  padding-right: 1.5vw;
+  font-weight: bolder;
+}
+.table1 td{
+  padding-right: 1.5vw;
+  padding-left: 0.7vw;
 }
 #orderTable{
   color: #252B42;
+  padding-right: 1vw;
 }
 #ordersmade{
   text-align: center;
+
 }
 #text{
   padding-top: 7%;
@@ -619,7 +628,7 @@
   padding-right: 0;
 }
 #deliveryOptions{
-  display: none;
+  /* display: none; */
   margin-top: 2vw;
   color: #252B42;
 }
@@ -703,7 +712,6 @@
   padding-bottom: 2vw;
  }
 div.totalPick, div.name, div.location, div.totalDel, div.phone{
- /*style how the divs display */
   display: inline;
   font-weight: bold;
 }

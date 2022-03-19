@@ -28,7 +28,7 @@
         <div class="title">
             <h2>Ajays Pizzeria</h2>
             <p>You can't buy happiness. But you can buy pizza.</p>
-            <button type="submit"  id="btn">ORDER</button>
+            <input type="button" value="ORDER" onClick="document.getElementById('order').scrollIntoView();" />
         </div>
     </header>
 <!-- ..................................................about us............................................................. -->
@@ -146,50 +146,53 @@
                 <div class="parts">
                     <div class="part1">
                             
-                        <input type="checkbox" name="toppings"value="bacon" id="bacon">
+                        <input type="checkbox" name="toppings" value="bacon" id="bacon">
                         <label for="bacon">Bacon</label> <br>  
                         
-                        <input type="checkbox" name="toppings" id="cheddar-cheese">
+                        <input type="checkbox" name="toppings" value="cheddar-cheese" id="cheddar-cheese">
                         <label for="cheddar-cheese">Cheddar Cheese</label> <br>
                         
-                        <input  type="checkbox" name="toppings" id="ham">
+                        <input  type="checkbox" name="toppings" value="ham" id="ham">
                         <label  for="ham">Ham</label> <br>
                         
-                        <input  type="checkbox" name="toppings" id="mozarella-cheese">
+                        <input  type="checkbox" name="toppings" value="mozarella-cheese" id="mozarella-cheese">
                         <label  for="mozarella-cheese">Mozarella Cheese</label> <br>
                     
-                        <input  type="checkbox" name="toppings"  id="mushrooms">
+                        <input  type="checkbox" name="toppings" value="mushroom" id="mushrooms">
                         <label  for="mushrooms">Mushroom</label> <br>
                             
                     </div>
                 
                     <div class="part2">
                         
-                            <input  type="checkbox" name="toppings"  id="olives">
+                            <input  type="checkbox" name="toppings" value="olives"  id="olives">
                             <label  for="olives">Olives</label> <br>
                         
-                            <input  type="checkbox" name="toppings"  id="onions">
+                            <input  type="checkbox" name="toppings" value="onions"  id="onions">
                             <label for="onions">Onions</label> <br>
                     
-                            <input  type="checkbox" name="toppings"id="parmesan-cheese">
+                            <input  type="checkbox" value="parmesan-cheese" name="toppings"id="parmesan-cheese">
                             <label for="parmesan-cheese">Parmesan Cheese</label> <br>
                         
-                            <input type="checkbox" name="toppings" id="pepperoni">
+                            <input type="checkbox" value="pepperoni" name="toppings" id="pepperoni">
                             <label for="pepperoni">Pepperoni</label> <br>
                     
-                            <input  type="checkbox" name="toppings"  id="sausage">
+                            <input  type="checkbox" value="sausage" name="toppings"  id="sausage">
                             <label  for="sausage">Sausage</label> 
                         </div>
                     </div> 
                 </div>
-            <input type="submit" name="submitButton" class="btnsubmit"  id="placeorder" value="Place Order">
+                <div class="btnsubmit" >
+                    <input type="submit" name="submitButton" class="btnsubmit"  id="placeorder" value="Place Order">
+                </div>
+            
       </form>
     </div>
     <div id="yourorder">
         <br>
         <hr width="30%" color="#f49b38" border-color="#f49b38">
-        <h3 class="salutation"><b>Here is your order:</b></h3>
         <div id="orderDetails">
+            <h3 class="salutation"><b>Here is your order:</b></h3>
                <table class="table1" id="orderTable">
                     <thead>
                         <tr>
@@ -223,8 +226,9 @@
                     </tfoot>
                </table>
                 <a href="#ordersection" type="submit" name="addorder" onclick="addOrder()" class="btn  submit" id="addorder">Add Order</a>
-                <button type="submit" name="checkout" onclick="deliveryOptions()" class="btn submit" id="checkout">Checkout</button>
-                
+              
+                <a href="#deliveryOptions" type="submit" name="checkout" onclick="deliveryOptions()" class="btn  submit" id="checkout">Checkout</a>
+              
                 <div id="deliveryOptions">
                     
                     <i class="fa fa-clock-o" style="font-size:6vw;color:#f49b38"></i>
