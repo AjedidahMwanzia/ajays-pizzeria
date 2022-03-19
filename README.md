@@ -29,7 +29,7 @@
 * An access to the Internet
 
 ### Installation Process
-Here is the live link .Enjoy
+Here is the live link .Enjoy https://ajedidahmwanzia.github.io/ajays-pizzeria/
 * Navigate to https://github.com/AjedidahMwanzia/studio on your browser
 * Click on the live link in the about section, which will direct you to the website.
 * Proceed to make your order and enjoy.
