@@ -496,15 +496,20 @@
 .heading {
   text-align: center;
   font-family:'lobster' ;
-  color: #252B42;
+  color: rgb(244,155,56);
   margin-bottom: 2vw;
 }
 .order{
   color: #252B42;
-  border: 0.1vw solid black;
+  /* border: 0.1vw solid #252B42;
+  border-radius: 0.5vw; */
   margin: 3vw;
   padding-top: 2vw;
   padding-bottom: 3vw;
+}
+.group input{
+  width: 70%;
+  padding: 0.5vw;
 }
 .container{
   text-align: center;
@@ -522,26 +527,205 @@
   text-align: center;
   padding-bottom: 1vw;
 }
-select{
+.container select{
   width:48% ;
   margin-left: 2vw;
   padding: 0.5vw;
   margin-top: 1vw;
   margin-bottom: 1vw;
 }
+.small{
+  text-align: center;
+}
+.small label{
+  font-weight: bold;
+}
+.parts{
+  display: flex;
+  justify-content: center;
+  margin-top: 1vw;
+  margin-bottom: 1vw;
+}
+.part1{
+  padding-right: 3vw;
+}
+.one select{
+  width:48% ;
+  margin-left: 2vw;
+  padding: 0.5vw;
+  margin-top: 1vw;
+  margin-bottom: 1vw;
+}
+.one{
+  text-align: center;
+}
+.order button{
+  width: 10%;
+  background-color:rgb(244,155,56) ;
+  border: none;
+  padding: 0.5vw;
+  color: white;
+  font-size: 1.2vw;
+  border-radius: 0.5vw;
+  margin-left:43vw ;
+  margin-top: 1vw;
+}
+#yourorder{
+  text-align: center;
+  /* display: none; */
+  padding-bottom: 5%;
+  color: #252B42;
+}
+#yourorder h3{
+  font-family:'lobster' ;
+  color: #252B42;
+  text-align: center;
+  padding-bottom: 1vw;
+}
+#yourorder a{
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  width: 25%;
+  padding: 0.5vw;
+  border-radius: 0.5vw;
+  background-color:rgb(244,155,56) ;
+
+}
+#yourorder button{
+  background-color:rgb(244,155,56) ;
+  border: none;
+  height: 2vw;
+  width: 6%;
+  color: white;
+  font-size: 1vw;
+  margin-top: 1vw;
+  border-radius: 0.5vw;
+  font-weight: bold;
+}
+.table1 th{
+  text-align: center;
+}
+#orderTable{
+  color: #252B42;
+}
+#ordersmade{
+  text-align: center;
+}
+#text{
+  padding-top: 7%;
+  padding-bottom: 5%;
+  padding-left: 0;
+  padding-right: 0;
+}
+#deliveryOptions{
+  display: none;
+  margin-top: 2vw;
+  color: #252B42;
+}
+#deliveryOptions button{
+  background-color:rgb(244,155,56) ;
+  border: none;
+  height: 2vw;
+  width: 10%;
+  color: white;
+  font-size: 1vw;
+  margin-top: 1vw;
+  border-radius: 0.5vw;
+  font-weight: bold;
+}
+#delivery{
+  display: none;
+  text-align: center;
+  padding: 3% ;
+  box-shadow: 0 5px 12px rgba(0, 0, 0, 0.2);
+  width: 30%;
+  border-radius: 1vw;
+  justify-content: center;
+  margin-left: 34vw;
+  margin-bottom: 3vw;
+  color: #252B42;
+}
+#delivery h5{
+  padding-bottom: 1vw;
+  font-size:1.2vw ;
+}
+#delivery input{
+  width: 70%;
+  padding: 0.5vw;
+  margin-top: 1vw;
+
+}
+#delivery button{
+  background-color:rgb(244,155,56) ;
+  border: none;
+  height: 2vw;
+  width: 40%;
+  color: white;
+  font-size: 1vw;
+  margin-top: 1.5vw;
+  border-radius: 0.5vw;
+  font-weight: bold;
+}
+.street{
+  padding: 1vw;
+}
+#pickUpConfirmation{
+  margin-bottom: 2vw;
+}
+#pickUpConfirmation a{
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  width: 25%;
+  padding: 0.5vw;
+  border-radius: 0.5vw;
+}
+#pickUpConfirmation p{
+  padding-bottom: 2vw;
+}
+#deliveryConfirmation{
+  margin-bottom: 1vw;
+}
+ #deliveryConfirmation a{
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  width: 25%;
+  padding: 0.5vw;
+  border-radius: 0.5vw;
+ }
+ #deliveryConfirmation p{
+  padding-bottom: 2vw;
+ }
+
+
+#pickUpConfirmation, #deliveryConfirmation{
+  display: none;
+  text-align: center;
+}
+div.totalPick, div.name, div.location, div.totalDel, div.phone{
+ /*style how the divs display */
+  display: inline;
+  font-weight: bold;
+}
+
+
+
 
 /* ..........................................................memories..................................................................... */
 .memories h2{
   text-align: center;
   font-family:'lobster' ;
   color: #252B42;
+  margin-bottom: 2vw;
 }
 hr{
-  width: 3%;
-  margin-left:48vw ;
+ 
+  margin-left:34vw ;
   margin-top: 0.5vw;
-  height: 0.2vw;
-  background-color:rgb(244,155,56) ;
+  margin-bottom: 2vw;
+ 
 }
 .family {
   width: 100%;
@@ -641,7 +825,7 @@ hr{
   color:#252B42  ;
   padding-bottom: 0.3vw;
 }
-.location{
+.shop{
   padding-top: 2vw;
   text-align: center;
 
@@ -650,7 +834,7 @@ hr{
   text-align: center;
   color:#252B42  ;
 }
-.location p{
+.shop p{
   padding-bottom: 0.3vw;
 }
 .days{
@@ -675,7 +859,7 @@ hr{
 .form{
   margin-left: 8vw;
 }
-input{
+.form input{
   width: 70%;
   height: 2vw;
   padding-left: 1vw;
@@ -721,7 +905,7 @@ input{
     padding-bottom: 0.3vw;
     font-size: 1.5vw;
   }
-  .location{
+  .shop{
     padding-top: 2vw;
     text-align: center;
   
@@ -731,7 +915,7 @@ input{
     color:#252B42  ;
     font-size: 1.5vw;
   }
-  .location p{
+  .shop p{
     padding-bottom: 0.3vw;
   }
   .days{
@@ -760,7 +944,7 @@ input{
   .form{
     margin-left: 8vw;
   }
-  input{
+  .form input{
     width: 60%;
     height: 3vw;
     padding-left: 1vw;
@@ -807,7 +991,7 @@ input{
     padding-bottom: 0.3vw;
     font-size: 1.5vw;
   }
-  .location{
+  .shop{
     padding-top: 2vw;
     text-align: center;
   
@@ -817,7 +1001,7 @@ input{
     color:#252B42  ;
     font-size: 1.5vw;
   }
-  .location p{
+  .shop p{
     padding-bottom: 0.3vw;
   }
   .days{
@@ -846,7 +1030,7 @@ input{
   .form{
     margin-left: 8vw;
   }
-  input{
+  .form input{
     width: 60%;
     height: 3vw;
     padding-left: 1vw;
