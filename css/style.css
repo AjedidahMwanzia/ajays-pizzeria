@@ -1,0 +1,1046 @@
+* {
+    box-sizing: border-box;
+    padding: 0%;
+    margin: 0%;
+  }
+  /* ....................................................... header section................................................... */
+  .header{
+    background-image: url(/assets/backgroundpizza.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+  #nav h1{
+    font-family: 'Tangerine', serif;
+    color: rgb(244,155,56);
+    padding-top: 1vw;
+    padding-left: 2vw;
+    padding-right: 25vw;
+
+  }
+  #nav a{
+    text-decoration: none;
+    color: white;
+    padding-top: 1.4vw;
+    padding-left: 1.5vw;
+    font-size: 1.3vw;
+  }
+  #nav{
+    display: flex;
+    background-color: rgb(0,0,0,0.6);
+    padding-bottom: 1vw;
+  }
+  .title{
+    color: white;
+    padding-top: 25vw;
+    padding-left: 5vw;
+  }
+  .title h2{
+    font-family: 'Tangerine', serif;
+    font-size: 5vw;
+    padding-bottom: 1vw;
+    padding-left: 3vw;
+  }
+  .title p{
+    font-size: 2vw;
+    padding-bottom: 3vw;
+    font-weight: bold;
+  }
+  .title button{
+    width: 10%;
+    height: 3vw;
+    font-size: 1vw;
+    background-color:rgb(244,155,56) ;
+    border-radius: 0.5vw;
+    border: none;
+    color: white;
+    margin-bottom: 10vw;
+    padding-bottom: 0.3vw;
+    font-weight: bold;
+    margin-left: 10vw;
+  }
+  /* ................................................mediaqueries.......................................................... */
+  @media  screen and (max-width:500px){
+    * {
+      box-sizing: border-box;
+      padding: 0%;
+      margin: 0%;
+    }
+    .header{
+      background-image: url(/assets/backgroundpizza.jpeg);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+    }
+    #nav h1{
+      font-family: 'Tangerine', serif;
+      color: rgb(244,155,56);
+      padding-top: 1vw;
+      padding-left: 2vw;
+      padding-right: 25vw;
+      font-size: 4vw;
+  
+    }
+    #nav a{
+      text-decoration: none;
+      color: white;
+      padding-top: 1.4vw;
+      padding-left: 1.5vw;
+      font-size: 2vw;
+    }
+    #nav{
+      display: flex;
+      background-color: rgb(0,0,0,0.6);
+      padding-bottom: 1vw;
+    }
+    .title{
+      color: white;
+      padding-top: 25vw;
+      padding-left: 5vw;
+    }
+    .title h2{
+      font-family: 'Tangerine', serif;
+      font-size: 5vw;
+      padding-bottom: 1vw;
+      padding-left: 3vw;
+    }
+    .title p{
+      font-size: 2vw;
+      padding-bottom: 3vw;
+      font-weight: bold;
+    }
+    .title button{
+      width: 10%;
+      height: 3vw;
+      font-size: 1vw;
+      background-color:rgb(244,155,56) ;
+      border-radius: 0.5vw;
+      border: none;
+      color: white;
+      margin-bottom: 10vw;
+      padding-bottom: 0.3vw;
+      font-weight: bold;
+      margin-left: 10vw;
+    }
+  }
+  @media  screen and (max-width:350px){
+    * {
+      box-sizing: border-box;
+      padding: 0%;
+      margin: 0%;
+    }
+    .header{
+      background-image: url(/assets/backgroundpizza.jpeg);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+    }
+    #nav h1{
+      font-family: 'Tangerine', serif;
+      color: rgb(244,155,56);
+      padding-top: 1vw;
+      padding-left: 2vw;
+      padding-right: 25vw;
+  
+    }
+    #nav a{
+      text-decoration: none;
+      color: white;
+      padding-top: 1.4vw;
+      padding-left: 1.5vw;
+      font-size: 1.3vw;
+    }
+    #nav{
+      display: flex;
+      background-color: rgb(0,0,0,0.6);
+      padding-bottom: 1vw;
+    }
+    .title{
+      color: white;
+      padding-top: 25vw;
+      padding-left: 5vw;
+    }
+    .title h2{
+      font-family: 'Tangerine', serif;
+      font-size: 5vw;
+      padding-bottom: 1vw;
+      padding-left: 3vw;
+    }
+    .title p{
+      font-size: 2vw;
+      padding-bottom: 3vw;
+      font-weight: bold;
+    }
+    .title button{
+      width: 10%;
+      height: 3vw;
+      font-size: 1vw;
+      background-color:rgb(244,155,56) ;
+      border-radius: 0.5vw;
+      border: none;
+      color: white;
+      margin-bottom: 10vw;
+      padding-bottom: 0.3vw;
+      font-weight: bold;
+      margin-left: 10vw;
+    }
+  }
+  /* ...............................................about-us................................................................ */
+
+#aboutus .story .description {
+  width: 55%;
+  padding-left: 10%;
+}
+#aboutus .story .img img {
+  width: 100%;
+  transition: 0.3s;
+  position: relative;
+  transform: rotate(-10deg);
+  border: 0.1vw solid #494949;
+}
+#aboutus .story .img {
+  position: relative;
+  width: 45%;
+  border: 0.1vw solid #494949;
+  transform: rotate(10deg);
+  backdrop-filter: blur(0.1vw);
+}
+#aboutus{
+  padding: 0 10%;
+}
+
+#aboutus .story {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 10% 0;
+}
+
+#aboutus .story .description span {
+  display: flex;
+  align-items: center;
+  color: #252B42;
+  font-size: 2vw;
+  margin-bottom: 2%;
+  font-weight: bold;
+  font-family: 'lobster', serif;
+}
+
+#aboutus .story .description span div {
+  width: 0.8vw;
+  height: 0.8vw;
+  border-radius: 50%;
+  background-color: #252B42;
+  margin-right: 2%;
+}
+#aboutus .story .description p {
+  color: #252B42;
+  font-size: 1.1vw;
+  line-height: 1.8vw;
+}
+/* ..............................................mediaqueries.......................................................... */
+@media  screen and (max-width:500px){
+
+#aboutus .story .description {
+  width: 55%;
+  padding-left: 10%;
+}
+#aboutus .story .img img {
+  width: 100%;
+  transition: 0.3s;
+  position: relative;
+  transform: rotate(-10deg);
+  border: 0.1vw solid #494949;
+}
+#aboutus .story .img {
+  position: relative;
+  width: 45%;
+  border: 0.1vw solid #494949;
+  transform: rotate(10deg);
+  backdrop-filter: blur(0.1vw);
+}
+#aboutus{
+  padding: 0 10%;
+}
+
+#aboutus .story {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 10% 0;
+}
+
+#aboutus .story .description span {
+  display: flex;
+  align-items: center;
+  color: #252B42;
+  font-size: 2vw;
+  margin-bottom: 2%;
+  font-weight: bold;
+  font-family: 'lobster', serif;
+}
+
+#aboutus .story .description span div {
+  width: 0.8vw;
+  height: 0.8vw;
+  border-radius: 50%;
+  background-color: #252B42;
+  margin-right: 2%;
+}
+#aboutus .story .description p {
+  color: #252B42;
+  font-size: 1.1vw;
+  line-height: 1.8vw;
+}
+}
+@media  screen and (max-width:350px){
+
+  #aboutus .story .description {
+    width: 55%;
+    padding-left: 10%;
+  }
+  #aboutus .story .img img {
+    width: 100%;
+    transition: 0.3s;
+    position: relative;
+    transform: rotate(-10deg);
+    border: 0.1vw solid #494949;
+  }
+  #aboutus .story .img {
+    position: relative;
+    width: 45%;
+    border: 0.1vw solid #494949;
+    transform: rotate(10deg);
+    backdrop-filter: blur(0.1vw);
+  }
+  #aboutus{
+    padding: 0 10%;
+  }
+  
+  #aboutus .story {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 10% 0;
+  }
+  
+  #aboutus .story .description span {
+    display: flex;
+    align-items: center;
+    color: #252B42;
+    font-size: 2vw;
+    margin-bottom: 2%;
+    font-weight: bold;
+    font-family: 'lobster', serif;
+  }
+  
+  #aboutus .story .description span div {
+    width: 0.8vw;
+    height: 0.8vw;
+    border-radius: 50%;
+    background-color: #252B42;
+    margin-right: 2%;
+  }
+  #aboutus .story .description p {
+    color: #252B42;
+    font-size: 1.1vw;
+    line-height: 1.8vw;
+  }
+  }
+/* .............................................our menu.................................................................... */
+.cards {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+
+}
+.card{
+  text-align:center;
+  width: 25%;
+  margin: 2% ;
+  padding: 2%;
+  color: #252B42;
+
+}
+.card img{
+  width: 18vw;
+  height: 15vw;
+} 
+.card button{
+  width: 30%;
+  background-color:rgb(244,155,56) ;
+  border: none;
+  padding: 0.5vw;
+  color: white;
+  font-size: 1.2vw;
+  
+}
+.card h4{
+  font-size: 1.5vw;
+  padding-bottom: 0.5vw;
+}
+.card p{
+  font-size: 1.2vw;
+  padding-bottom: 0.5vw;
+}
+.menu h2{
+  color: #252B42;
+  text-align: center;
+  font-family:'lobster' ;
+}
+.menu h2 span{
+  color: rgb(244,155,56) ;
+}
+/* ...........................................................mediaqueries................................................. */
+@media  screen and (max-width:500px){
+  .cards {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  
+  }
+  .card{
+    text-align:center;
+    width: 25%;
+    margin: 2% ;
+    padding: 2%;
+    color: #252B42;
+  
+  }
+  .card img{
+    width: 18vw;
+    height: 15vw;
+  } 
+  .card button{
+    width: 30%;
+    background-color:rgb(244,155,56) ;
+    border: none;
+    padding: 0.5vw;
+    color: white;
+    font-size: 1.2vw;
+    
+  }
+  .card h4{
+    font-size: 1.5vw;
+    padding-bottom: 0.5vw;
+  }
+  .card p{
+    font-size: 1.2vw;
+    padding-bottom: 0.5vw;
+  }
+  .menu h2{
+    color: #252B42;
+    text-align: center;
+    font-family:'lobster' ;
+    font-size: 3vw;
+  }
+  .menu h2 span{
+    color: rgb(244,155,56) ;
+  }
+}
+@media  screen and (max-width:350px){
+  .cards {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  
+  }
+  .card{
+    text-align:center;
+    width: 25%;
+    margin: 2% ;
+    padding: 2%;
+    color: #252B42;
+  
+  }
+  .card img{
+    width: 18vw;
+    height: 15vw;
+  } 
+  .card button{
+    width: 30%;
+    background-color:rgb(244,155,56) ;
+    border: none;
+    padding: 0.5vw;
+    color: white;
+    font-size: 1.2vw;
+    
+  }
+  .card h4{
+    font-size: 1.5vw;
+    padding-bottom: 0.5vw;
+  }
+  .card p{
+    font-size: 1.2vw;
+    padding-bottom: 0.5vw;
+  }
+  .menu h2{
+    color: #252B42;
+    text-align: center;
+    font-family:'lobster' ;
+  }
+  .menu h2 span{
+    color: rgb(244,155,56) ;
+  }
+}
+/* .......................................................... order........................................................ */
+.heading {
+  text-align: center;
+  font-family:'lobster' ;
+  color: rgb(244,155,56);
+  margin-bottom: 2vw;
+}
+.order{
+  color: #252B42;
+  /* border: 0.1vw solid #252B42;
+  border-radius: 0.5vw; */
+  margin: 3vw;
+  padding-top: 2vw;
+  padding-bottom: 3vw;
+}
+.group input{
+  width: 70%;
+  padding: 0.5vw;
+}
+.container{
+  text-align: center;
+}
+.group{
+  margin-left: 15vw;
+  width: 70%;
+  padding: 1vw;
+  text-align: center;
+}
+.group label{
+  padding-bottom: 1vw;
+}
+.order h4{
+  text-align: center;
+  padding-bottom: 1vw;
+}
+.container select{
+  width:48% ;
+  margin-left: 2vw;
+  padding: 0.5vw;
+  margin-top: 1vw;
+  margin-bottom: 1vw;
+}
+.small{
+  text-align: center;
+}
+.small label{
+  font-weight: bold;
+}
+.parts{
+  display: flex;
+  justify-content: center;
+  margin-top: 1vw;
+  margin-bottom: 1vw;
+}
+.part1{
+  padding-right: 3vw;
+}
+.one select{
+  width:48% ;
+  margin-left: 2vw;
+  padding: 0.5vw;
+  margin-top: 1vw;
+  margin-bottom: 1vw;
+}
+.one{
+  text-align: center;
+}
+.order button{
+  width: 10%;
+  background-color:rgb(244,155,56) ;
+  border: none;
+  padding: 0.5vw;
+  color: white;
+  font-size: 1.2vw;
+  border-radius: 0.5vw;
+  margin-left:43vw ;
+  margin-top: 1vw;
+}
+#yourorder{
+  text-align: center;
+  /* display: none; */
+  padding-bottom: 5%;
+  color: #252B42;
+}
+#yourorder h3{
+  font-family:'lobster' ;
+  color: #252B42;
+  text-align: center;
+  padding-bottom: 1vw;
+}
+#yourorder a{
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  width: 25%;
+  padding: 0.5vw;
+  border-radius: 0.5vw;
+  background-color:rgb(244,155,56) ;
+
+}
+#yourorder button{
+  background-color:rgb(244,155,56) ;
+  border: none;
+  height: 2vw;
+  width: 6%;
+  color: white;
+  font-size: 1vw;
+  margin-top: 1vw;
+  border-radius: 0.5vw;
+  font-weight: bold;
+}
+.table1 th{
+  text-align: center;
+}
+#orderTable{
+  color: #252B42;
+}
+#ordersmade{
+  text-align: center;
+}
+#text{
+  padding-top: 7%;
+  padding-bottom: 5%;
+  padding-left: 0;
+  padding-right: 0;
+}
+#deliveryOptions{
+  display: none;
+  margin-top: 2vw;
+  color: #252B42;
+}
+#deliveryOptions button{
+  background-color:rgb(244,155,56) ;
+  border: none;
+  height: 2vw;
+  width: 10%;
+  color: white;
+  font-size: 1vw;
+  margin-top: 1vw;
+  border-radius: 0.5vw;
+  font-weight: bold;
+}
+#delivery{
+  /* display: none; */
+  text-align: center;
+  padding: 3% ;
+  box-shadow: 0 5px 12px rgba(0, 0, 0, 0.2);
+  width: 30%;
+  border-radius: 1vw;
+  justify-content: center;
+  margin-left: 34vw;
+  margin-bottom: 3vw;
+  color: #252B42;
+}
+#delivery h5{
+  padding-bottom: 1vw;
+  font-size:1.2vw ;
+}
+#delivery input{
+  width: 70%;
+  padding: 0.5vw;
+  margin-top: 1vw;
+
+}
+#delivery button{
+  background-color:rgb(244,155,56) ;
+  border: none;
+  height: 2vw;
+  width: 40%;
+  color: white;
+  font-size: 1vw;
+  margin-top: 1.5vw;
+  border-radius: 0.5vw;
+  font-weight: bold;
+}
+.street{
+  padding: 1vw;
+}
+#pickUpConfirmation{
+  margin-bottom: 2vw;
+  /* display: none; */
+  text-align: center;
+}
+#pickUpConfirmation a{
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  width: 25%;
+  padding: 0.5vw;
+  border-radius: 0.5vw;
+}
+#pickUpConfirmation p{
+  padding-bottom: 2vw;
+}
+#deliveryConfirmation{
+  margin-bottom: 1vw;
+  /* display: none; */
+  text-align: center;
+}
+ #deliveryConfirmation a{
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  width: 25%;
+  padding: 0.5vw;
+  border-radius: 0.5vw;
+ }
+ #deliveryConfirmation p{
+  padding-bottom: 2vw;
+ }
+div.totalPick, div.name, div.location, div.totalDel, div.phone{
+ /*style how the divs display */
+  display: inline;
+  font-weight: bold;
+}
+
+
+
+
+/* ..........................................................memories..................................................................... */
+.memories h2{
+  text-align: center;
+  font-family:'lobster' ;
+  color: #252B42;
+  margin-bottom: 2vw;
+}
+hr{
+ 
+  margin-left:34vw ;
+  margin-top: 0.5vw;
+  margin-bottom: 2vw;
+ 
+}
+.family {
+  width: 100%;
+}
+.family img{
+  width: 24.8%;
+}
+/* ...........................................................mediaqueries................................................ */
+@media  screen and (max-width:500px){
+  .memories h2{
+    text-align: center;
+    font-family:'lobster' ;
+    color: #252B42;
+    font-size: 3vw;
+  }
+  hr{
+    width: 3%;
+    margin-left:48vw ;
+    margin-top: 0.5vw;
+    height: 0.2vw;
+    background-color:rgb(244,155,56) ;
+  }
+  .family {
+    width: 100%;
+  }
+  .family img{
+    width: 24.2%;
+  }
+}
+@media  screen and (max-width:360px){
+  .memories h2{
+    text-align: center;
+    font-family:'lobster' ;
+    color: #252B42;
+    font-size: 3vw;
+  }
+  hr{
+    width: 3%;
+    margin-left:48vw ;
+    margin-top: 0.5vw;
+    height: 0.2vw;
+    background-color:rgb(244,155,56) ;
+  }
+  .family {
+    width: 100%;
+  }
+  .family img{
+    width: 24%;
+  }
+}
+@media  screen and (max-width:250px){
+  .memories h2{
+    text-align: center;
+    font-family:'lobster' ;
+    color: #252B42;
+    font-size: 3vw;
+  }
+  hr{
+    width: 3%;
+    margin-left:48vw ;
+    margin-top: 0.5vw;
+    height: 0.2vw;
+    background-color:rgb(244,155,56) ;
+  }
+  .family {
+    width: 100%;
+  }
+  .family img{
+    width: 22%;
+  }
+}
+/* ...........................................................footer...................................................................... */
+.footer{
+  display: flex;
+  justify-content: space-around;
+  margin-top: 2vw;
+  margin-bottom: 1vw;
+}
+.hours li{
+  list-style: none;
+  color: #252B42 ;
+  padding-bottom: 0.1vw;
+ 
+}
+.time{
+  color:rgb(244,155,56)  ;
+}
+.footer h4{
+  color:#252B42  ;
+  text-align: center;
+  font-family:'lobster' ;
+  padding-bottom: 1vw;
+  font-size: 1.2vw;
+}
+.contact p{
+  text-align: center;
+  color:#252B42  ;
+  padding-bottom: 0.3vw;
+}
+.shop{
+  padding-top: 2vw;
+  text-align: center;
+
+}
+.copy{
+  text-align: center;
+  color:#252B42  ;
+}
+.shop p{
+  padding-bottom: 0.3vw;
+}
+.days{
+  display: flex;
+ 
+}
+.time li{
+  padding-left: 1vw;
+  color:rgb(244,155,56) ;
+}
+.subscribe{
+  display: flex;
+  flex-direction: column;
+}
+.icons a{
+  padding-left: 1vw;
+}
+.icons{
+  margin-bottom: 2vw;
+  margin-left: 9vw;
+}
+.form{
+  margin-left: 8vw;
+}
+.form input{
+  width: 70%;
+  height: 2vw;
+  padding-left: 1vw;
+}
+.form button{
+  width: 25%;
+  height: 2vw;
+  background-color: rgb(244,155,56) ;
+  border: none;
+  color: white;
+  border-radius: 0.2vw;
+}
+/* ........................................................mediaqueries............................................. */
+
+@media  screen and (max-width:500px){
+  .footer{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 2vw;
+    margin-bottom: 1vw;
+    width: 100%;
+  }
+  .hours li{
+    list-style: none;
+    color: #252B42 ;
+    padding-bottom: 0.1vw;
+    font-size: 2vw;
+   
+  }
+  .time{
+    color:rgb(244,155,56)  ;
+  }
+  .footer h4{
+    color:#252B42  ;
+    text-align: center;
+    font-family:'lobster' ;
+    padding-bottom: 1vw;
+    font-size: 1.8vw;
+  }
+  .contact p{
+    text-align: center;
+    color:#252B42  ;
+    padding-bottom: 0.3vw;
+    font-size: 1.5vw;
+  }
+  .shop{
+    padding-top: 2vw;
+    text-align: center;
+  
+  }
+  .copy{
+    text-align: center;
+    color:#252B42  ;
+    font-size: 1.5vw;
+  }
+  .shop p{
+    padding-bottom: 0.3vw;
+  }
+  .days{
+    display: flex;
+   
+  }
+  .time li{
+    padding-left: 1vw;
+    color:rgb(244,155,56) ;
+  }
+  .subscribe{
+    display: flex;
+    flex-direction: column;
+  }
+  .icons{
+    margin-bottom: 2vw;
+    margin-left: 9vw;
+    display: flex;
+    width: 0.1vw;
+    padding-left: 3vw;
+  }
+  .icons a{
+    width: 0.5%;
+    padding-right: 3vw;
+  }
+  .form{
+    margin-left: 8vw;
+  }
+  .form input{
+    width: 60%;
+    height: 3vw;
+    padding-left: 1vw;
+    font-size: 1vw;
+  }
+  .form button{
+    width: 25%;
+    height: 3vw;
+    background-color: rgb(244,155,56) ;
+    border: none;
+    color: white;
+    border-radius: 0.3vw;
+    font-size: 1vw;
+  }
+}
+@media  screen and (max-width:350px){
+  .footer{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 2vw;
+    margin-bottom: 1vw;
+    width: 100%;
+  }
+  .hours li{
+    list-style: none;
+    color: #252B42 ;
+    padding-bottom: 0.1vw;
+    font-size: 2vw;
+   
+  }
+  .time{
+    color:rgb(244,155,56)  ;
+  }
+  .footer h4{
+    color:#252B42  ;
+    text-align: center;
+    font-family:'lobster' ;
+    padding-bottom: 1vw;
+    font-size: 1.8vw;
+  }
+  .contact p{
+    text-align: center;
+    color:#252B42  ;
+    padding-bottom: 0.3vw;
+    font-size: 1.5vw;
+  }
+  .shop{
+    padding-top: 2vw;
+    text-align: center;
+  
+  }
+  .copy{
+    text-align: center;
+    color:#252B42  ;
+    font-size: 1.5vw;
+  }
+  .shop p{
+    padding-bottom: 0.3vw;
+  }
+  .days{
+    display: flex;
+   
+  }
+  .time li{
+    padding-left: 1vw;
+    color:rgb(244,155,56) ;
+  }
+  .subscribe{
+    display: flex;
+    flex-direction: column;
+  }
+  .icons{
+    margin-bottom: 2vw;
+    margin-left: 9vw;
+    display: flex;
+    width: 2vw;
+    padding-left: 1vw;
+  }
+  .icons a{
+    width: 0.5%;
+    padding-right: 3vw;
+  }
+  .form{
+    margin-left: 8vw;
+  }
+  .form input{
+    width: 60%;
+    height: 3vw;
+    padding-left: 1vw;
+    font-size: 1vw;
+  }
+  .form button{
+    width: 25%;
+    height: 3vw;
+    background-color: rgb(244,155,56) ;
+    border: none;
+    color: white;
+    border-radius: 0.3vw;
+    font-size: 1vw;
+  }
+}

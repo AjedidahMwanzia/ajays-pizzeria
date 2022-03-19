@@ -4,9 +4,367 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <!-- links -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <link rel="stylesheet"href="https://fonts.googleapis.com/css?family=Tangerine">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/7740ca802f.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Ajays Pizzeria</title>
 </head>
 <body>
-    
+ <!-- ..................................................header........................................................... -->
+    <header class="header">
+        <div class="navbar" id="nav">
+            <h1>Ajays Pizzeria</h1>
+            <a href="#Header">Home</a>
+            <a href="#aboutus">About Us</a>
+            <a href="#Menu">Menu</a>
+            <a href="#order">Order</a>
+            <a href="#contact">Contact</a>
+        </div>
+        <div class="title">
+            <h2>Ajays Pizzeria</h2>
+            <p>You can't buy happiness. But you can buy pizza.</p>
+            <button type="submit"  id="btn">ORDER</button>
+        </div>
+    </header>
+<!-- ..................................................about us............................................................. -->
+    <div id="aboutus">
+        <div class="story">
+            <div class="img">
+                <img src="./assets/rest.jpg" alt="">
+            </div>
+            <div class="description">
+                <span><div></div>About us</span>
+                <p>A kenyan Kamba girl, inspired by the pure love of food, joy and her mother's own delicious cooking and love, decides to pursue her love for good food and opens a pizza  place .This restaurant is in honour of my african mother and all other queens who go out of their way to make us delicious meals .At ajays pizzeria we don't just sell pizza, we share in the joy and love of an african mother,we are a family.Join us and become part of the family .We are located at Utawala Capital shopping Mall mavoko sub-county machakos county.Ajays pizzeria we are your family</p>
+            </div>
+        </div>
+    </div>
+  <!--...................................................menu.............................................................  -->
+ <div class="menu" id="Menu">
+     <h2> <span>Discover </span> our menu</h2>
+     <div class="cards">
+            <!-- card -->
+            <div class="card">
+                <img src="./assets/hawaian.png" alt="">
+                <h4>Hawaian pizza</h4>
+                <p>Ksh. 500</p>
+           </div>
+            <!-- card -->
+            <div class="card">
+                <img src="./assets/peperoni.png" alt="">
+                <h4>Peperoni pizza</h4>
+                <p>Ksh. 600</p>
+            </div>
+            <!-- card -->
+            <div class="card">
+                <img src="./assets/cheese.png" alt="">
+                <h4>Cheese pizza</h4>
+                <p>Ksh. 500</p>
+           </div>
+            <!-- card -->
+            <div class="card">
+                <img src="./assets/magharita.png" alt="">
+                <h4>Magharita pizza</h4>
+                <p>Ksh. 700</p>
+           </div>
+            <!-- card -->
+            <div class="card">
+                <img src="./assets/mushroom.png" alt="">
+                <h4>Mushroom pizza</h4>
+                <p>Ksh. 400</p>
+           </div>
+            <!-- card -->
+            <div class="card">
+                <img src="./assets/vegan.png" alt="">
+                <h4>Vegan pizza</h4>
+                <p><b>L:</b> Ksh. 600,<b>M:</b>:Ksh. 500,<b>S:</b>:500</p>
+            </div>
+      </div>
+    </div>
+    <!-- .......................................................Order.................................................... -->
+  
+    <div class="order" id="order">
+      <div class="heading" id="heading"> 
+         <h2>Order Here</h2>
+      </div>
+        <form action="" id="form1">
+            <div class="group">
+                    <label for="name">Your Name:</label> <br> <br>
+                    <input type="text"  id="name" placeholder="Name..."  required>
+            </div>
+            <h4>Kindly pick the following:</h4>
+            <div class="container">
+                    <div class="flavor">
+                        <label for="pizza-flavor">Pizza flavor</label> <br>
+                        <select  id="pizza-flavor" required>
+                            <option>Hawaian</option>
+                            <option>Margharita</option>
+                            <option>Mushroom</option>
+                            <option> Vegan</option>
+                            <option>Cheese</option>
+                            <option>Pepperoni</option>
+                        </select>
+                </div>
+                <div class="size">
+                        <label for="pizza-size">Pizza size</label> <br>
+                        <select  id="pizza-size" required>
+                            <option>Small</option>
+                            <option>Medium</option>
+                            <option>Large</option>
+                        </select>
+                    </div>
+                    <div class="crust">
+                        <label for="pizza-crust">Pizza Crust</label> <br>
+                        <select  id="pizza-crust" required>
+                            <option>Gluten Free</option>
+                            <option>Pan</option>
+                            <option>Stuffed</option>
+                            <option>Thin</option>
+                        </select>
+                    </div>
+            </div>
+            <div class="one">
+                <label for="pizza-number">Quantity</label><br>
+                <select  id="pizza-number" required>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                </select>
+            </div>
+          <div class="toppings1">
+                <div class="small">
+                    <label for="extratoppings">Extra Toppings</label><br>
+                    <p><small id="maximum">Maximum of 3</small><br></p>
+                    <p> <small ><b>Small:&ensp;</b>Ksh.70&ensp; <b>Medium:&ensp;</b>Ksh.100&ensp; <b>Large:&ensp;</b>Ksh.130&ensp;</small></p>
+                </div>
+                <div class="parts">
+                    <div class="part1">
+                            
+                        <input type="checkbox" name="toppings"value="bacon" id="bacon">
+                        <label for="bacon">Bacon</label> <br>  
+                        
+                        <input type="checkbox" name="toppings" id="cheddar-cheese">
+                        <label for="cheddar-cheese">Cheddar Cheese</label> <br>
+                        
+                        <input  type="checkbox" name="toppings" id="ham">
+                        <label  for="ham">Ham</label> <br>
+                        
+                        <input  type="checkbox" name="toppings" id="mozarella-cheese">
+                        <label  for="mozarella-cheese">Mozarella Cheese</label> <br>
+                    
+                        <input  type="checkbox" name="toppings"  id="mushrooms">
+                        <label  for="mushrooms">Mushroom</label> <br>
+                            
+                    </div>
+                
+                    <div class="part2">
+                        
+                            <input  type="checkbox" name="toppings"  id="olives">
+                            <label  for="olives">Olives</label> <br>
+                        
+                            <input  type="checkbox" name="toppings"  id="onions">
+                            <label for="onions">Onions</label> <br>
+                    
+                            <input  type="checkbox" name="toppings"id="parmesan-cheese">
+                            <label for="parmesan-cheese">Parmesan Cheese</label> <br>
+                        
+                            <input type="checkbox" name="toppings" id="pepperoni">
+                            <label for="pepperoni">Pepperoni</label> <br>
+                    
+                            <input  type="checkbox" name="toppings"  id="sausage">
+                            <label  for="sausage">Sausage</label> 
+                        </div>
+                    </div> 
+                </div>
+            <input type="submit" name="submitButton" class="btnsubmit"  id="placeorder" value="Place Order">
+      </form>
+    </div>
+    <div id="yourorder">
+        <br>
+        <hr width="30%" color="#f49b38" border-color="#f49b38">
+        <h3 class="salutation"><b>Here is your order:</b></h3>
+        <div id="orderDetails">
+               <table class="table1" id="orderTable">
+                    <thead>
+                        <tr>
+                            <th >Flavor&ensp;</th>
+                            <th >Number&ensp;</th>
+                            <th >Size&ensp;</th>
+                            <th >Crust&ensp;</th>
+                            <th >Extra Toppings&ensp;</th>
+                            <th >Total&ensp;</th>
+                        </tr>
+                    </thead>
+                    <tbody id="ordersmade">
+                        <tr>
+                            <td class="pizza-flavor"></td>
+                            <td class="number"></td>
+                            <td class="pizza-size"></td>
+                            <td class="pizza-crust"></td>
+                            <td class="toppings"></td>
+                            <td class="pizzaTotal1"td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td class="grandtot"td>
+                        </tr>
+                    </tfoot>
+               </table>
+                <a href="#ordersection" type="submit" name="addorder" onclick="addOrder()" class="btn  submit" id="addorder">Add Order</a>
+                <button type="submit" name="checkout" onclick="deliveryOptions()" class="btn submit" id="checkout">Checkout</button>
+                
+                <div id="deliveryOptions">
+                    
+                    <i class="fa fa-clock-o" style="font-size:6vw;color:#f49b38"></i>
+                    <br>
+                    <br>
+                    <p>Your order will be ready in 30 minutes.</p>
+                    <p>Would you like to:</p>
+                    <button type="submit" name="pickup" onclick="pickUp()" class="btn"><i class="fas fa-store"></i> Pick it Up</button>
+                    <button type="submit" name="deliver" onclick="deliver()" class="btn submit"><i class="fas fa-truck"></i> Get it Delivered</button>
+                </div>
+                
+        </div>
+    </div>
+    <div id="delivery">
+        <form id="deliveryDetails" class="form2" >
+            <h5>Please fill the following for delivery:</h5>
+
+            <div class="street">
+                <label for="location"><b>Delivery location:</b> </label><br>
+                <input type="text"  id="location" placeholder="Street, County"  required>
+            </div>
+          
+            <div class="phone">
+                <label for="phone">Phone Number:</label><br>
+                <input type="tel" id="phone" name="phone" placeholder="+254 123 456789"required>                    
+            </div> 
+            <button type="submit" class="btnSubmit" id="delivery-details">Deliver</button>
+
+        </form>
+    </div>
+      
+    <div id="pickUpConfirmation">
+
+        <i class="fas fa-check-circle" style="font-size:80px;color:#f49b38;"></i><br> <br>
+        <p><div class="name"></div>, your order has been successfully placed! <br> <br>Total amount payable at the store on pickup is Ksh.<div class="totalPick"></div>.</p>
+        <a href="#header" type="button" class="btn" onclick="reloadPage()" id="got-it" style="background-color:#f49b38">OK, Got it!</a>  
+                   
+    </div>
+    <div id="deliveryConfirmation">
+        <i class="fas fa-check-circle" style="font-size:80px;color:#f49b38;"></i> <br> <br>
+        <p>
+            <div class="name"></div>, your order has been successfully placed! <br>
+            <br>The delivery fee to
+            <div class="location"></div> is Ksh.200. <br>
+            <br>Total amount payable to the courier on delivery is Ksh. <br>
+            <div class="totalDel"></div>.
+            <br>In case there are any changes to your order, we shall reach you on:
+            <div class="phone"></div>
+        </p>
+        <a href="#header" type="button" class="btn" onclick="reloadPage()" id="got-it" style="background-color:#f49b38">OK, Got it!</a>
+    </div>
+ 
+
+
+   <!-- ........................................................memories................................................. -->
+    <div class="memories">
+        <h2>Memories</h2>
+        <div class="family">
+            <img src="./assets/image7.jpg" alt="">
+            <img src="./assets/image3.jpg" alt="">
+            <img src="./assets/image4.jpg" alt="">
+            <img src="./assets/image6.jpg" alt="">
+           
+        </div>
+    </div>
+    <!-- ......................................................footer...................................................... -->
+    <div class="footer" id="contact">
+        <div class="hours">
+            <h4>Working Hours</h4>
+            <div class="days">
+                <div class="list">
+                    <ul>
+                        <li>Monday    </li>
+                        <li>Tuesday   </li>
+                        <li>Wednesday </li>
+                        <li>Thursday  </span></li>
+                        <li>Friday    </li>
+                        <li>Saturday  </li>
+                        <li>Sunday     </li>
+                    </ul>
+                </div>
+                <div class="dots">
+                    <ul>
+                        <li>.......</li>
+                        <li>.......</li>
+                        <li>.......</li>
+                        <li>.......</li>
+                        <li>.......</li>
+                        <li>.......</li>
+                        <li>.......</li>
+                    </ul>
+                </div>
+               <div class="time">
+                  <ul>
+                      <li> 8:00-9:00</li>
+                      <li> 8:00-9:00</li>
+                      <li> 8:00-9:00</li>
+                      <li> 8:00-9:00</li>
+                      <li> 8:00-9:00</li>
+                      <li> 8:00-9:00</li>
+                      <li>closed</li>
+                    </ul>
+               </div>
+            </div> 
+            
+        </div>
+        <div class="contact">
+            <h4>contacts</h4>
+            <div>
+                <p>ajaypizzeria@gmail.com</p>
+                <p>+254 114 215 411</p>
+                <div class="shop">
+                    <p>Capital shopping mall</p>
+                    <p> Kincar Utawala </p>
+                    <p>Machakos </p>
+                </div>
+               
+            </div>
+        </div>
+        <div class="social">
+            <h4>social</h4>
+            <div class="subscribe">
+                <div  class="icons">
+                    <a href="mailto:ajedidah.mwanzia@student.moringaschool.com"><i class="fa-solid fa-envelope"h></i></a>
+                    <a href="https://www.linkedin.com/in/ajedidah-mwanzia-493bb9117/"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://ajedidahmwanzia.github.io/portfolio/"><i class="fa-brands fa-github"></i></a>
+                </div>
+                <div class="form">
+                    <form action="">
+                        <input type="email" placeholder="Email Address">
+                        <button>subscribe</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="copy">
+        <p> copyright &copy 2022 Ajedidah Mwanzia</p>
+    </div>
+    <!--...........js link......................................................................................  -->
+    <script src="js/script.js"></script>
 </body>
 </html>
