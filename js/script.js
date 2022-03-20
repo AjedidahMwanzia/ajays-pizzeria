@@ -118,8 +118,7 @@ function makeDelivery() {
   }
   
   var arrayTotal = []; //global array used to store all total prices for each order
-  
-  function deliveryOptions() {
+   function deliveryOptions() {
     $("#deliveryOptions").show();
     $("#orderDetails").hide();
     document.getElementById("orders").reset(); //reset form
@@ -127,11 +126,10 @@ function makeDelivery() {
     var checkoutTotal = 0;
     arrayTotal.forEach(function(index) {
         checkoutTotal = checkoutTotal + index;
-    });
+    }); 
     $(".totalPick").text(checkoutTotal);
     var checkoutTotalDel = checkoutTotal + 200; //add Ksh.200 to checkout total when delivery is chosen
     $(".totalDel").text(checkoutTotalDel);
-    
   }
   
   function pickUp() {

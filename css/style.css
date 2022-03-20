@@ -363,6 +363,8 @@
   margin: 2% ;
   padding: 2%;
   color: #252B42;
+  box-shadow: 0 0.5vw 1.5vw rgba(0, 0, 0, 0.2);
+  border-radius: 1.8vw;
 
 }
 .card img{
@@ -498,19 +500,33 @@
   font-family:'lobster' ;
   color: rgb(244,155,56);
   margin-bottom: 2vw;
+  font-weight:bolder ;
 }
 .order{
+  width: 100%;
+ 
+}
+.top{
+  width: 100%;
   color: #252B42;
-  margin: 3vw;
-  padding-top: 2vw;
+  margin-top: 2vw;
+  margin-bottom: 2vw;
+  padding-top: 1vw;
   padding-bottom: 3vw;
+  background-color: rgb(244,155,56) ;
+  
+ 
 }
 .group input{
-  width: 70%;
+  width: 50%;
   padding: 0.5vw;
+  border-radius: 0.5vw;
 }
 .container{
   text-align: center;
+  display: flex;
+  flex-direction: row;
+  margin-left: 33vw;
 }
 .group{
   margin-left: 15vw;
@@ -521,16 +537,19 @@
 .group label{
   padding-bottom: 1vw;
 }
-.order h4{
+.top h4{
   text-align: center;
   padding-bottom: 1vw;
 }
 .container select{
-  width:48% ;
-  margin-left: 2vw;
+  width: 10vw;
+  margin-left: 1vw;
   padding: 0.5vw;
   margin-top: 1vw;
   margin-bottom: 1vw;
+  border-radius: 0.5vw;
+  background-color: white;
+
 }
 .small{
   text-align: center;
@@ -543,30 +562,34 @@
   justify-content: center;
   margin-top: 1vw;
   margin-bottom: 1vw;
+  
 }
 .part1{
   padding-right: 3vw;
 }
 .one select{
-  width:48% ;
-  margin-left: 2vw;
+  width:34% ;
+  margin-left: 1vw;
   padding: 0.5vw;
   margin-top: 1vw;
   margin-bottom: 1vw;
+  border-radius: 0.5vw;
+  background-color: white;
 }
 .one{
   text-align: center;
 }
 .btnsubmit input {
   width: 10%;
-  background-color:rgb(244,155,56) ;
+  background-color:white ;
   border: none;
   padding: 0.5vw;
-  color: white;
+  color:#252B42;
   font-size: 1.2vw;
   border-radius: 0.5vw;
   margin-left:42vw ;
   margin-top: 1vw;
+  font-weight: bold;
 }
 #yourorder{
   text-align: center;
@@ -716,8 +739,258 @@ div.totalPick, div.name, div.location, div.totalDel, div.phone{
   font-weight: bold;
 }
 
+/* ..........................................................mediaqueries................................................. */
 
-
+@media  screen and (max-width:500px){
+  .heading {
+    text-align: center;
+    font-family:'lobster' ;
+    color: rgb(244,155,56);
+    margin-bottom: 2vw;
+    font-weight:bolder ;
+  }
+  .order{
+    width: 100%;
+    font-size: 2vw;
+    cursor: pointer;
+   
+  }
+  .top{
+    width: 100%;
+    color: #252B42;
+    margin-top: 2vw;
+    margin-bottom: 2vw;
+    padding-top: 1vw;
+    padding-bottom: 3vw;
+    background-color: rgb(244,155,56) ;
+    
+   
+  }
+  .group input{
+    width: 53%;
+    padding: 0.5vw;
+    border-radius: 0.7vw;
+    font-size: 2vw;
+  }
+  .container{
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    margin-left: 32vw;
+  }
+  .group{
+    margin-left: 15vw;
+    width: 70%;
+    padding: 1vw;
+    text-align: center;
+  }
+  .group label{
+    padding-bottom: 1vw;
+  }
+  .top h4{
+    text-align: center;
+    padding-bottom: 1vw;
+  }
+  .container select{
+    width: 11vw;
+    margin-left: 1vw;
+    padding: 0.2vw;
+    margin-top: 1vw;
+    margin-bottom: 1vw;
+    border-radius: 0.7vw;
+    background-color: white;
+    font-size: 2vw;
+  
+  }
+  .small{
+    text-align: center;
+  }
+  .small label{
+    font-weight: bold;
+  }
+  .parts{
+    display: flex;
+    justify-content: center;
+    margin-top: 1vw;
+    margin-bottom: 1vw;
+    
+  }
+  .part1{
+    padding-right: 3vw;
+  }
+  .one select{
+    width:34% ;
+    margin-left: 1vw;
+    padding: 0.5vw;
+    margin-top: 1vw;
+    margin-bottom: 1vw;
+    border-radius: 0.7vw;
+    background-color: white;
+    font-size: 2vw;
+  }
+  .one{
+    text-align: center;
+  }
+  .btnsubmit input {
+    width: 10%;
+    background-color:white ;
+    border: none;
+    padding: 0.5vw;
+    color:#252B42;
+    font-size: 1.2vw;
+    border-radius: 0.5vw;
+    margin-left:42vw ;
+    margin-top: 1vw;
+    font-weight: bold;
+  }
+  #yourorder{
+    text-align: center;
+    display: none;
+    padding-bottom: 5%;
+    color: #252B42;
+  }
+  #yourorder h3{
+    font-family:'lobster' ;
+    color: #252B42;
+    text-align: center;
+    padding-bottom: 1vw;
+  }
+  #yourorder a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    width: 25%;
+    padding: 0.5vw;
+    border-radius: 0.5vw;
+    background-color:rgb(244,155,56) ;
+  
+  }
+  #yourorder button{
+    background-color:rgb(244,155,56) ;
+    border: none;
+    height: 2vw;
+    width: 6%;
+    color: white;
+    font-size: 1vw;
+    margin-top: 1vw;
+    border-radius: 0.5vw;
+    font-weight: bold;
+  }
+  .table1 {
+    margin-left: 28vw;
+    margin-bottom: 2vw;
+  }
+  .table1 th{
+    padding-right: 1.5vw;
+    font-weight: bolder;
+  }
+  .table1 td{
+    padding-right: 1.5vw;
+    padding-left: 0.7vw;
+  }
+  #orderTable{
+    color: #252B42;
+    padding-right: 1vw;
+  }
+  #ordersmade{
+    text-align: center;
+  
+  }
+  #text{
+    padding-top: 7%;
+    padding-bottom: 5%;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  #deliveryOptions{
+    /* display: none; */
+    margin-top: 2vw;
+    color: #252B42;
+  }
+  #deliveryOptions button{
+    background-color:rgb(244,155,56) ;
+    border: none;
+    height: 2vw;
+    width: 10%;
+    color: white;
+    font-size: 1vw;
+    margin-top: 1vw;
+    border-radius: 0.5vw;
+    font-weight: bold;
+  }
+  #delivery{
+    display: none;
+    text-align: center;
+    padding: 3% ;
+    box-shadow: 0 5px 12px rgba(0, 0, 0, 0.2);
+    width: 30%;
+    border-radius: 1vw;
+    justify-content: center;
+    margin-left: 34vw;
+    margin-bottom: 3vw;
+    color: #252B42;
+  }
+  #delivery h5{
+    padding-bottom: 1vw;
+    font-size:1.2vw ;
+  }
+  #delivery input{
+    width: 70%;
+    padding: 0.5vw;
+    margin-top: 1vw;
+  
+  }
+  #delivery button{
+    background-color:rgb(244,155,56) ;
+    border: none;
+    height: 2vw;
+    width: 40%;
+    color: white;
+    font-size: 1vw;
+    margin-top: 1.5vw;
+    border-radius: 0.5vw;
+    font-weight: bold;
+  }
+  .street{
+    padding: 1vw;
+  }
+  #pickUpConfirmation{
+    margin-bottom: 2vw;
+    display: none;
+    text-align: center;
+  }
+  #pickUpConfirmation a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    width: 25%;
+    padding: 0.5vw;
+    border-radius: 0.5vw;
+  }
+  #pickUpConfirmation p{
+    padding-bottom: 2vw;
+  }
+  #deliveryConfirmation{
+    margin-bottom: 1vw;
+    display: none;
+    text-align: center;
+  }
+   #deliveryConfirmation a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    width: 25%;
+    padding: 0.5vw;
+    border-radius: 0.5vw;
+   }
+   #deliveryConfirmation p{
+    padding-bottom: 2vw;
+   }
+  div.totalPick, div.name, div.location, div.totalDel, div.phone{
+    display: inline;
+    font-weight: bold;
+  }
+}
 
 /* ..........................................................memories..................................................................... */
 .memories h2{
@@ -809,6 +1082,7 @@ hr{
   justify-content: space-around;
   margin-top: 2vw;
   margin-bottom: 1vw;
+  
 }
 .hours li{
   list-style: none;
